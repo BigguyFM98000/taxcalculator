@@ -1,0 +1,40 @@
+.app-title{
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-divs{
+   display: flex;
+   justify-content: space-between;
+   gap: 12px;
+}
+
+.calculate-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-inputs{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.top-bar{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+}
+
+.app-logo{
+    width: 34px;
+    height: 34px;
+}

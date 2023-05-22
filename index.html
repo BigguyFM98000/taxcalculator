@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+
+        <div class="top-bar">
+            <nav class="navbar">
+                <h1>bootSure</h1>
+                <h1><img class="app-logo" src="./assets//logo-full.png" alt="logo"/></h1>
+            </nav>
+            <h2 class="app-title">Tax Calculator</h2>
+        </div>
+        
+
+        <form class="form-inputs">
+            <div >
+                <div class="input-divs">
+                    <label for="taxyear">Tax year</label>
+                    <select name="taxyear" id="taxyear">
+                        
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023" selected>2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        
+                     </select>
+                </div>
+                <div class="input-divs">
+                    <label for="annualincome">Annual Income</label>
+                    <input placeholder="enter annual income" type="text" id="annualincome"/>
+                </div>
+                <div class="input-divs">
+                    <label for="age">Age</label>
+                    <input placeholder="enter age" type="number" id="age"/>
+                </div>
+                <div class="calculate-btn">
+                    <button onclick="calculate()" type="button">
+                        Calculate
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <div class="input-divs">
+                    <label for="annual-income">Annual Income</label>
+                    <input value='' placeholder="annual income" type="text" id="annual-income2"/>
+                </div>
+                <div class="input-divs">
+                    <label for="annual-income-tax">Annual Income Tax</label>
+                    <input placeholder="annual income tax" type="text" id="annual-income-tax"/>
+                </div>
+                <div class="input-divs">
+                    <label for="net-income">Net Income:</label>
+                    <input placeholder="net income" type="text" id="net-income"/>
+                </div>
+            </div>
+            
+        </form>
+
+        
+    </div>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
